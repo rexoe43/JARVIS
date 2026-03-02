@@ -17,17 +17,16 @@ def start_brain():
 
         if not data:
             break
-        
-    
-    response = proccess_command(data)
 
-    conn.send(response.encode())
+        response = proccess_command(data)
 
-    if response == "EXIT":
-        break
+        conn.send(response.encode())
+
+        if response == "EXIT":
+            break
 
     conn.close()
     server.close()
-
 if __name__ == "__main__":
     start_brain()
+        
