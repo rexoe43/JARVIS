@@ -1,8 +1,8 @@
 import socket
 from command_processor import proccess_command
 
-HOST = ""
-PORT = 
+HOST = "localhost"
+PORT =  65432
 
 def start_brain():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
